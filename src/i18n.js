@@ -154,15 +154,42 @@ const resources = {
   },
 };
 
+// Detect browser language
+const getBrowserLanguage = () => {
+  const browserLang = navigator.language || navigator.userLanguage;
+
+  // Check if browser language starts with 'en'
+  if (browserLang.toLowerCase().startsWith('en')) {
+    return 'en';
+  }
+
+  // Check if browser language starts with 'fr'
+  if (browserLang.toLowerCase().startsWith('fr')) {
+    return 'fr';
+  }
+
+  // Default to French for Swiss users
+  return 'fr';
+};
+
+// Check if user has already selected a language
+const savedLanguage = localStorage.getItem('language');
+const initialLanguage = savedLanguage || getBrowserLanguage();
+
 i18n
   .use(initReactI18next)
   .init({
     resources,
-    lng: 'fr', // langue par défaut
+    lng: initialLanguage,
     fallbackLng: 'fr',
     interpolation: {
       escapeValue: false,
     },
   });
+
+// Save language preference when changed
+i18n.on('languageChanged', (lng) => {
+  localStorage.setItem('language', lng);
+});
 
 export default i18n;

@@ -15,7 +15,7 @@ const ServiceCard = ({ icon, titleKey, descKey, delay }) => {
       initial={{ opacity: 0, y: 50 }}
       animate={inView ? { opacity: 1, y: 0 } : {}}
       transition={{ duration: 0.6, delay }}
-      className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-shadow duration-300 border border-gray-100 group hover:border-swiss-red"
+      className="bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-shadow duration-300 border border-gray-100 dark:border-gray-700 group hover:border-swiss-red"
     >
       <motion.div
         className="mb-6 text-swiss-red"
@@ -24,10 +24,10 @@ const ServiceCard = ({ icon, titleKey, descKey, delay }) => {
       >
         {icon}
       </motion.div>
-      <h3 className="text-2xl font-bold text-gray-800 mb-4 group-hover:text-swiss-red transition-colors">
+      <h3 className="text-2xl font-bold text-gray-800 dark:text-white mb-4 group-hover:text-swiss-red transition-colors">
         {t(titleKey)}
       </h3>
-      <p className="text-gray-600 leading-relaxed">{t(descKey)}</p>
+      <p className="text-gray-600 dark:text-gray-300 leading-relaxed">{t(descKey)}</p>
     </motion.div>
   );
 };
@@ -79,7 +79,7 @@ const Services = () => {
   ];
 
   return (
-    <section id="services" className="py-20 bg-gray-50">
+    <section id="services" className="py-20 bg-gray-50 dark:bg-gray-800">
       <div className="container-custom">
         <motion.div
           ref={ref}
@@ -88,8 +88,8 @@ const Services = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="section-title">{t('services.title')}</h2>
-          <p className="section-subtitle">{t('services.subtitle')}</p>
+          <h2 className="section-title dark:text-white">{t('services.title')}</h2>
+          <p className="section-subtitle dark:text-gray-300">{t('services.subtitle')}</p>
         </motion.div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">

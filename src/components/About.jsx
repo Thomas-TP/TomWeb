@@ -12,7 +12,7 @@ const About = () => {
   const skills = t('about.skillsList', { returnObjects: true });
 
   return (
-    <section id="about" className="py-20 bg-gray-50">
+    <section id="about" className="py-20 bg-gray-50 dark:bg-gray-800">
       <div className="container-custom">
         <motion.div
           ref={ref}
@@ -21,8 +21,8 @@ const About = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="section-title">{t('about.title')}</h2>
-          <p className="section-subtitle">{t('about.subtitle')}</p>
+          <h2 className="section-title dark:text-white">{t('about.title')}</h2>
+          <p className="section-subtitle dark:text-gray-300">{t('about.subtitle')}</p>
         </motion.div>
 
         <div className="grid md:grid-cols-2 gap-12 items-center">

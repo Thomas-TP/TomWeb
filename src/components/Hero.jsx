@@ -21,7 +21,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-50 via-white to-red-50 pt-20"
+      className="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-50 via-white to-red-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 pt-20"
     >
       <div className="container-custom py-20">
         <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -37,7 +37,7 @@ const Hero = () => {
               transition={{ delay: 0.2, duration: 0.6 }}
               className="mb-6"
             >
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-gray-800 leading-tight">
+              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-gray-800 dark:text-white leading-tight">
                 {t('hero.title')}
                 <br />
                 <span className="text-swiss-red bg-gradient-to-r from-swiss-red to-swiss-dark bg-clip-text text-transparent">
@@ -50,7 +50,7 @@ const Hero = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4, duration: 0.6 }}
-              className="text-xl text-gray-600 mb-4"
+              className="text-xl text-gray-600 dark:text-gray-300 mb-4"
             >
               {t('hero.subtitle')}
             </motion.p>
@@ -59,7 +59,7 @@ const Hero = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.6, duration: 0.6 }}
-              className="text-lg text-gray-500 mb-8"
+              className="text-lg text-gray-500 dark:text-gray-400 mb-8"
             >
               {t('hero.description')}
             </motion.p>

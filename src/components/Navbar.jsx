@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion, AnimatePresence } from 'framer-motion';
 import Logo from './Logo';
+import DarkModeToggle from './DarkModeToggle';
 
 const Navbar = () => {
   const { t, i18n } = useTranslation();
@@ -42,7 +43,7 @@ const Navbar = () => {
     <nav
       className={`fixed w-full z-50 transition-all duration-300 ${
         isScrolled
-          ? 'bg-white/95 backdrop-blur-sm shadow-lg'
+          ? 'bg-white/95 dark:bg-gray-900/95 backdrop-blur-sm shadow-lg'
           : 'bg-transparent'
       }`}
     >
@@ -57,7 +58,7 @@ const Navbar = () => {
             whileTap={{ scale: 0.95 }}
           >
             <Logo className="w-12 h-12" />
-            <span className="text-2xl font-bold text-gray-800">
+            <span className="text-2xl font-bold text-gray-800 dark:text-white">
               Tom<span className="text-swiss-red">Web</span>
             </span>
           </motion.a>
@@ -69,20 +70,23 @@ const Navbar = () => {
                 key={link.key}
                 href={link.href}
                 onClick={(e) => scrollToSection(e, link.href)}
-                className="text-gray-700 hover:text-swiss-red transition-colors duration-200 font-medium"
+                className="text-gray-700 dark:text-gray-200 hover:text-swiss-red dark:hover:text-swiss-red transition-colors duration-200 font-medium"
               >
                 {t(`nav.${link.key}`)}
               </a>
             ))}
 
+            {/* Dark Mode Toggle */}
+            <DarkModeToggle />
+
             {/* Language Selector */}
-            <div className="flex gap-2 ml-4">
+            <div className="flex gap-2">
               <button
                 onClick={() => changeLanguage('fr')}
                 className={`px-3 py-1 rounded-md font-medium transition-all ${
                   i18n.language === 'fr'
                     ? 'bg-swiss-red text-white'
-                    : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
+                    : 'bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-200 hover:bg-gray-300 dark:hover:bg-gray-600'
                 }`}
               >
                 FR
@@ -92,7 +96,7 @@ const Navbar = () => {
                 className={`px-3 py-1 rounded-md font-medium transition-all ${
                   i18n.language === 'en'
                     ? 'bg-swiss-red text-white'
-                    : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
+                    : 'bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-200 hover:bg-gray-300 dark:hover:bg-gray-600'
                 }`}
               >
                 EN
@@ -108,17 +112,17 @@ const Navbar = () => {
           >
             <div className="w-6 h-5 flex flex-col justify-between">
               <span
-                className={`h-0.5 bg-gray-800 transition-all ${
+                className={`h-0.5 bg-gray-800 dark:bg-white transition-all ${
                   isMobileMenuOpen ? 'rotate-45 translate-y-2' : ''
                 }`}
               />
               <span
-                className={`h-0.5 bg-gray-800 transition-all ${
+                className={`h-0.5 bg-gray-800 dark:bg-white transition-all ${
                   isMobileMenuOpen ? 'opacity-0' : ''
                 }`}
               />
               <span
-                className={`h-0.5 bg-gray-800 transition-all ${
+                className={`h-0.5 bg-gray-800 dark:bg-white transition-all ${
                   isMobileMenuOpen ? '-rotate-45 -translate-y-2' : ''
                 }`}
               />
@@ -134,7 +138,7 @@ const Navbar = () => {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden bg-white border-t border-gray-200"
+            className="md:hidden bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-700"
           >
             <div className="container-custom py-4 flex flex-col gap-4">
               {navLinks.map((link) => (
@@ -142,20 +146,26 @@ const Navbar = () => {
                   key={link.key}
                   href={link.href}
                   onClick={(e) => scrollToSection(e, link.href)}
-                  className="text-gray-700 hover:text-swiss-red transition-colors duration-200 font-medium py-2"
+                  className="text-gray-700 dark:text-gray-200 hover:text-swiss-red transition-colors duration-200 font-medium py-2"
                 >
                   {t(`nav.${link.key}`)}
                 </a>
               ))}
 
+              {/* Mobile Dark Mode Toggle */}
+              <div className="flex items-center justify-between pt-4 border-t border-gray-200 dark:border-gray-700">
+                <span className="text-gray-700 dark:text-gray-300 font-medium">Mode sombre</span>
+                <DarkModeToggle />
+              </div>
+
               {/* Mobile Language Selector */}
-              <div className="flex gap-2 pt-4 border-t border-gray-200">
+              <div className="flex gap-2 pt-4 border-t border-gray-200 dark:border-gray-700">
                 <button
                   onClick={() => changeLanguage('fr')}
                   className={`flex-1 px-3 py-2 rounded-md font-medium transition-all ${
                     i18n.language === 'fr'
                       ? 'bg-swiss-red text-white'
-                      : 'bg-gray-200 text-gray-700'
+                      : 'bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-200'
                   }`}
                 >
                   Français
@@ -165,7 +175,7 @@ const Navbar = () => {
                   className={`flex-1 px-3 py-2 rounded-md font-medium transition-all ${
                     i18n.language === 'en'
                       ? 'bg-swiss-red text-white'
-                      : 'bg-gray-200 text-gray-700'
+                      : 'bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-200'
                   }`}
                 >
                   English
