@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     <footer className="bg-gray-900 text-white py-4">
       <div className="container-custom">
-        <div className="grid md:grid-cols-3 gap-8 mb-4">
+        <div className="grid md:grid-cols-3 gap-8 mb-2">
           {/* Logo & Description */}
           <div>
             <div className="mb-3">
@@ -26,7 +26,7 @@ const Footer = () => {
           {/* Quick Links - Two Columns */}
           <div>
             <h3 className="text-lg font-bold mb-3">Navigation</h3>
-            <ul className="grid grid-cols-2 gap-x-4 gap-y-1">
+            <ul className="grid grid-cols-2 gap-x-2 gap-y-1">
               {['home', 'services', 'portfolio', 'about', 'contact'].map((item) => (
                 <li key={item}>
                   <a
