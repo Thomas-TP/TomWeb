@@ -63,9 +63,13 @@ const About = () => {
                   <rect x="-35" y="-20" width="70" height="80" rx="10" fill="white" />
 
                   {/* TomWeb logo on shirt */}
-                  <circle cx="0" cy="10" r="12" fill="#FF0000" opacity="0.8" />
-                  <rect x="-5" y="5" width="2" height="10" fill="white" />
-                  <rect x="-8" y="8" width="16" height="2" fill="white" />
+                  <foreignObject x="-15" y="-5" width="30" height="30">
+                    <img
+                      src="/Favicon.png"
+                      alt="TomWeb"
+                      style={{ width: '100%', height: '100%', objectFit: 'contain' }}
+                    />
+                  </foreignObject>
 
                   {/* Arms */}
                   <rect x="-52" y="-10" width="17" height="65" rx="8" fill="white" />

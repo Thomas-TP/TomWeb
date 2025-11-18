@@ -52,15 +52,12 @@ const Navbar = () => {
           {/* Logo */}
           <motion.a
             href="#home"
-            className="flex items-center gap-3"
+            className="flex items-center"
             onClick={(e) => scrollToSection(e, '#home')}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            <Logo className="w-12 h-12" />
-            <span className="text-2xl font-bold text-gray-800 dark:text-white">
-              Tom<span className="text-swiss-red">Web</span>
-            </span>
+            <Logo className="h-12 w-auto" />
           </motion.a>
 
           {/* Desktop Navigation */}

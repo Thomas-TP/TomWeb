@@ -11,11 +11,8 @@ const Footer = () => {
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           {/* Logo & Description */}
           <div>
-            <div className="flex items-center gap-3 mb-4">
-              <Logo className="w-10 h-10" />
-              <span className="text-2xl font-bold">
-                Tom<span className="text-swiss-red">Web</span>
-              </span>
+            <div className="mb-4">
+              <Logo className="h-12 w-auto" />
             </div>
             <p className="text-gray-400">
               {t('hero.subtitle')}
