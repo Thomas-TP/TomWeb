@@ -171,10 +171,10 @@ const QuoteForm = () => {
                   className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white focus:border-swiss-red focus:ring-2 focus:ring-swiss-red/20 outline-none transition-all"
                 >
                   <option value="showcase">Site Vitrine</option>
-                  <option value="ecommerce">E-commerce</option>
                   <option value="custom">Application sur mesure</option>
                   <option value="redesign">Refonte de site existant</option>
                   <option value="maintenance">Maintenance/Support</option>
+                  <option value="other">Autre/Question</option>
                 </select>
               </div>
 
