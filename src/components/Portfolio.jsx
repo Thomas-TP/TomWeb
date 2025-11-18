@@ -330,8 +330,9 @@ const Portfolio = () => {
                 >
                   <MagneticButton
                     onClick={() => window.open('https://thomastp.me', '_blank')}
-                    className="inline-flex items-center gap-3 bg-white text-swiss-red font-semibold py-4 px-8 rounded-lg hover:bg-gray-100 transition-all duration-300 shadow-lg hover:shadow-xl"
-                    magneticStrength={0.5}
+                    className="inline-flex items-center gap-3 bg-white text-swiss-red font-semibold rounded-lg hover:bg-gray-100 transition-all duration-300 shadow-lg hover:shadow-xl"
+                    style={{ padding: '60px' }}
+                    magneticStrength={2}
                     magneticRange={150}
                   >
                     {t('portfolio.cta')}
