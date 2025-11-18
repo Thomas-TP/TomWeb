@@ -79,9 +79,9 @@ const QuoteForm = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="section-title dark:text-white">Demande de Devis</h2>
+          <h2 className="section-title dark:text-white">{t('quote.title')}</h2>
           <p className="section-subtitle dark:text-gray-300">
-            Obtenez une estimation gratuite pour votre projet
+            {t('quote.subtitle')}
           </p>
         </motion.div>
 
@@ -97,7 +97,7 @@ const QuoteForm = () => {
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
                   <label htmlFor="name" className="block text-gray-700 dark:text-gray-300 font-semibold mb-2">
-                    Nom complet *
+                    {t('quote.form.nameRequired')}
                   </label>
                   <input
                     type="text"
@@ -112,7 +112,7 @@ const QuoteForm = () => {
 
                 <div>
                   <label htmlFor="email" className="block text-gray-700 dark:text-gray-300 font-semibold mb-2">
-                    Email *
+                    {t('quote.form.emailRequired')}
                   </label>
                   <input
                     type="email"
@@ -130,7 +130,7 @@ const QuoteForm = () => {
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
                   <label htmlFor="phone" className="block text-gray-700 dark:text-gray-300 font-semibold mb-2">
-                    Téléphone
+                    {t('quote.form.phone')}
                   </label>
                   <input
                     type="tel"
@@ -144,7 +144,7 @@ const QuoteForm = () => {
 
                 <div>
                   <label htmlFor="company" className="block text-gray-700 dark:text-gray-300 font-semibold mb-2">
-                    Entreprise
+                    {t('quote.form.company')}
                   </label>
                   <input
                     type="text"
@@ -160,7 +160,7 @@ const QuoteForm = () => {
               {/* Row 3: Project Type */}
               <div>
                 <label htmlFor="projectType" className="block text-gray-700 dark:text-gray-300 font-semibold mb-2">
-                  Type de projet *
+                  {t('quote.form.projectTypeRequired')}
                 </label>
                 <select
                   id="projectType"
@@ -170,11 +170,11 @@ const QuoteForm = () => {
                   required
                   className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white focus:border-swiss-red focus:ring-2 focus:ring-swiss-red/20 outline-none transition-all"
                 >
-                  <option value="showcase">Site Vitrine</option>
-                  <option value="custom">Application sur mesure</option>
-                  <option value="redesign">Refonte de site existant</option>
-                  <option value="maintenance">Maintenance/Support</option>
-                  <option value="other">Autre/Question</option>
+                  <option value="showcase">{t('quote.form.projectTypes.showcase')}</option>
+                  <option value="custom">{t('quote.form.projectTypes.custom')}</option>
+                  <option value="redesign">{t('quote.form.projectTypes.redesign')}</option>
+                  <option value="maintenance">{t('quote.form.projectTypes.maintenance')}</option>
+                  <option value="other">{t('quote.form.projectTypes.other')}</option>
                 </select>
               </div>
 
@@ -182,7 +182,7 @@ const QuoteForm = () => {
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
                   <label htmlFor="budget" className="block text-gray-700 dark:text-gray-300 font-semibold mb-2">
-                    Budget estimé
+                    {t('quote.form.budget')}
                   </label>
                   <select
                     id="budget"
@@ -191,18 +191,18 @@ const QuoteForm = () => {
                     onChange={handleChange}
                     className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white focus:border-swiss-red focus:ring-2 focus:ring-swiss-red/20 outline-none transition-all"
                   >
-                    <option value="">Sélectionnez</option>
-                    <option value="< 1000 CHF">{"< 1000 CHF"}</option>
-                    <option value="1000-3000 CHF">1000-3000 CHF</option>
-                    <option value="3000-5000 CHF">3000-5000 CHF</option>
-                    <option value="5000-10000 CHF">5000-10000 CHF</option>
-                    <option value="> 10000 CHF">{"> 10000 CHF"}</option>
+                    <option value="">{t('quote.form.budgetOptions.select')}</option>
+                    <option value="< 1000 CHF">{t('quote.form.budgetOptions.low')}</option>
+                    <option value="1000-3000 CHF">{t('quote.form.budgetOptions.medium')}</option>
+                    <option value="3000-5000 CHF">{t('quote.form.budgetOptions.high')}</option>
+                    <option value="5000-10000 CHF">{t('quote.form.budgetOptions.veryHigh')}</option>
+                    <option value="> 10000 CHF">{t('quote.form.budgetOptions.enterprise')}</option>
                   </select>
                 </div>
 
                 <div>
                   <label htmlFor="timeline" className="block text-gray-700 dark:text-gray-300 font-semibold mb-2">
-                    Délai souhaité
+                    {t('quote.form.timeline')}
                   </label>
                   <select
                     id="timeline"
@@ -211,11 +211,11 @@ const QuoteForm = () => {
                     onChange={handleChange}
                     className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white focus:border-swiss-red focus:ring-2 focus:ring-swiss-red/20 outline-none transition-all"
                   >
-                    <option value="">Sélectionnez</option>
-                    <option value="urgent">Urgent ({"< 1 mois"})</option>
-                    <option value="1-2 mois">1-2 mois</option>
-                    <option value="2-3 mois">2-3 mois</option>
-                    <option value="flexible">Flexible</option>
+                    <option value="">{t('quote.form.timelineOptions.select')}</option>
+                    <option value="urgent">{t('quote.form.timelineOptions.urgent')}</option>
+                    <option value="1-2 mois">{t('quote.form.timelineOptions.short')}</option>
+                    <option value="2-3 mois">{t('quote.form.timelineOptions.medium')}</option>
+                    <option value="flexible">{t('quote.form.timelineOptions.flexible')}</option>
                   </select>
                 </div>
               </div>
@@ -223,7 +223,7 @@ const QuoteForm = () => {
               {/* Message */}
               <div>
                 <label htmlFor="message" className="block text-gray-700 dark:text-gray-300 font-semibold mb-2">
-                  Description du projet *
+                  {t('quote.form.messageRequired')}
                 </label>
                 <textarea
                   id="message"
@@ -232,7 +232,7 @@ const QuoteForm = () => {
                   onChange={handleChange}
                   required
                   rows="6"
-                  placeholder="Décrivez votre projet en détail..."
+                  placeholder={t('quote.form.messagePlaceholder')}
                   className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white focus:border-swiss-red focus:ring-2 focus:ring-swiss-red/20 outline-none transition-all resize-none"
                 />
               </div>
@@ -246,7 +246,7 @@ const QuoteForm = () => {
                     status === 'sending' ? 'opacity-70 cursor-not-allowed' : ''
                   }`}
                 >
-                  {status === 'sending' ? 'Envoi en cours...' : 'Demander un devis gratuit'}
+                  {status === 'sending' ? t('quote.form.sending') : t('quote.form.submit')}
                 </button>
               </div>
 
@@ -257,7 +257,7 @@ const QuoteForm = () => {
                   animate={{ opacity: 1, y: 0 }}
                   className="bg-green-100 dark:bg-green-900 border border-green-400 dark:border-green-600 text-green-700 dark:text-green-200 px-4 py-3 rounded-lg"
                 >
-                  ✅ Votre demande de devis a été envoyée avec succès ! Nous vous recontacterons rapidement.
+                  ✅ {t('quote.form.success')}
                 </motion.div>
               )}
 
@@ -267,7 +267,7 @@ const QuoteForm = () => {
                   animate={{ opacity: 1, y: 0 }}
                   className="bg-red-100 dark:bg-red-900 border border-red-400 dark:border-red-600 text-red-700 dark:text-red-200 px-4 py-3 rounded-lg"
                 >
-                  ❌ Une erreur est survenue. Veuillez réessayer ou nous contacter directement.
+                  ❌ {t('quote.form.error')}
                 </motion.div>
               )}
             </form>

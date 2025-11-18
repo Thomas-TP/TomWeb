@@ -47,9 +47,9 @@ const Contact = () => {
                   </svg>
                 </motion.div>
 
-                <h3 className="text-2xl font-bold mb-4">Email</h3>
+                <h3 className="text-2xl font-bold mb-4">{t('contact.email')}</h3>
                 <p className="text-lg opacity-90 mb-2">thomas@prudhomme.li</p>
-                <p className="text-sm opacity-75">Cliquez pour m'envoyer un email</p>
+                <p className="text-sm opacity-75">{t('contact.emailCta')}</p>
               </div>
             </motion.a>
 
@@ -74,9 +74,9 @@ const Contact = () => {
                   </svg>
                 </motion.div>
 
-                <h3 className="text-2xl font-bold mb-4">WhatsApp</h3>
+                <h3 className="text-2xl font-bold mb-4">{t('contact.whatsapp')}</h3>
                 <p className="text-lg opacity-90 mb-2">+41 76 376 45 51</p>
-                <p className="text-sm opacity-75">Cliquez pour démarrer une conversation</p>
+                <p className="text-sm opacity-75">{t('contact.whatsappCta')}</p>
               </div>
             </motion.a>
           </div>
@@ -93,7 +93,7 @@ const Contact = () => {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
               </svg>
-              <span className="font-medium">Suisse 🇨🇭</span>
+              <span className="font-medium">{t('contact.location')}</span>
             </div>
 
             <div className="flex items-center gap-3 text-gray-600 dark:text-gray-400">
