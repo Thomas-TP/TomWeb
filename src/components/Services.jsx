@@ -15,7 +15,7 @@ const ServiceCard = ({ icon, titleKey, descKey, delay }) => {
       initial={{ opacity: 0, y: 50 }}
       animate={inView ? { opacity: 1, y: 0 } : {}}
       transition={{ duration: 0.6, delay }}
-      className="bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-shadow duration-300 border border-gray-100 dark:border-gray-700 group hover:border-swiss-red"
+      className="bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 border-2 border-gray-100 dark:border-gray-700 group hover:border-swiss-red dark:hover:border-swiss-red"
     >
       <motion.div
         className="mb-6 text-swiss-red"

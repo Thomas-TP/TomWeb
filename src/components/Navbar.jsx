@@ -48,7 +48,7 @@ const Navbar = () => {
       }`}
     >
       <div className="container-custom">
-        <div className="flex items-center justify-between h-32 md:h-40">
+        <div className="flex items-center justify-between h-24 md:h-28">
           {/* Logo */}
           <motion.a
             href="#home"
