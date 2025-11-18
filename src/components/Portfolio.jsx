@@ -115,6 +115,148 @@ const Portfolio = () => {
                 </motion.div>
               </motion.div>
 
+              {/* Decorative Elements Section */}
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={inView ? { opacity: 1 } : {}}
+                transition={{ duration: 1, delay: 1 }}
+                className="relative py-8 my-8"
+              >
+                {/* Floating Icons Grid */}
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-6">
+                  {/* Swiss Theme */}
+                  <motion.div
+                    animate={{
+                      y: [0, -10, 0],
+                      rotate: [0, 5, 0]
+                    }}
+                    transition={{
+                      duration: 3,
+                      repeat: Infinity,
+                      ease: "easeInOut"
+                    }}
+                    className="bg-white/10 backdrop-blur-sm rounded-xl p-4 flex flex-col items-center gap-2 hover:bg-white/20 transition-all"
+                  >
+                    <svg className="w-12 h-12" viewBox="0 0 48 48" fill="none">
+                      {/* Swiss Mountain */}
+                      <path d="M8 40L18 20L24 28L30 20L40 40H8Z" fill="white" opacity="0.9"/>
+                      <path d="M12 40L20 26L24 32L28 26L36 40H12Z" fill="white" opacity="0.7"/>
+                    </svg>
+                    <span className="text-xs font-semibold text-white/80">Suisse</span>
+                  </motion.div>
+
+                  {/* Coding Theme */}
+                  <motion.div
+                    animate={{
+                      y: [0, -15, 0],
+                      scale: [1, 1.05, 1]
+                    }}
+                    transition={{
+                      duration: 4,
+                      repeat: Infinity,
+                      ease: "easeInOut",
+                      delay: 0.5
+                    }}
+                    className="bg-white/10 backdrop-blur-sm rounded-xl p-4 flex flex-col items-center gap-2 hover:bg-white/20 transition-all"
+                  >
+                    <svg className="w-12 h-12" viewBox="0 0 48 48" fill="white">
+                      {/* Code brackets */}
+                      <path d="M16 12L6 24L16 36" stroke="white" strokeWidth="3" fill="none" strokeLinecap="round"/>
+                      <path d="M32 12L42 24L32 36" stroke="white" strokeWidth="3" fill="none" strokeLinecap="round"/>
+                      <path d="M28 10L20 38" stroke="white" strokeWidth="3" strokeLinecap="round"/>
+                    </svg>
+                    <span className="text-xs font-semibold text-white/80">Code</span>
+                  </motion.div>
+
+                  {/* Education Theme */}
+                  <motion.div
+                    animate={{
+                      y: [0, -12, 0],
+                      rotate: [0, -5, 0]
+                    }}
+                    transition={{
+                      duration: 3.5,
+                      repeat: Infinity,
+                      ease: "easeInOut",
+                      delay: 1
+                    }}
+                    className="bg-white/10 backdrop-blur-sm rounded-xl p-4 flex flex-col items-center gap-2 hover:bg-white/20 transition-all"
+                  >
+                    <svg className="w-12 h-12" viewBox="0 0 48 48" fill="white">
+                      {/* Graduation cap */}
+                      <path d="M24 10L4 20L24 30L44 20L24 10Z" fill="white" opacity="0.9"/>
+                      <path d="M24 30V38M18 34V42L24 44L30 42V34" stroke="white" strokeWidth="2" fill="none"/>
+                    </svg>
+                    <span className="text-xs font-semibold text-white/80">Études</span>
+                  </motion.div>
+
+                  {/* Web Dev Theme */}
+                  <motion.div
+                    animate={{
+                      y: [0, -8, 0],
+                      scale: [1, 1.08, 1]
+                    }}
+                    transition={{
+                      duration: 3.8,
+                      repeat: Infinity,
+                      ease: "easeInOut",
+                      delay: 1.5
+                    }}
+                    className="bg-white/10 backdrop-blur-sm rounded-xl p-4 flex flex-col items-center gap-2 hover:bg-white/20 transition-all"
+                  >
+                    <svg className="w-12 h-12" viewBox="0 0 48 48" fill="white">
+                      {/* Browser window */}
+                      <rect x="6" y="10" width="36" height="28" rx="2" stroke="white" strokeWidth="2" fill="none"/>
+                      <line x1="6" y1="16" x2="42" y2="16" stroke="white" strokeWidth="2"/>
+                      <circle cx="11" cy="13" r="1.5" fill="white"/>
+                      <circle cx="16" cy="13" r="1.5" fill="white"/>
+                      <circle cx="21" cy="13" r="1.5" fill="white"/>
+                      <path d="M15 24L20 28L15 32M25 24H33" stroke="white" strokeWidth="2" strokeLinecap="round"/>
+                    </svg>
+                    <span className="text-xs font-semibold text-white/80">Web</span>
+                  </motion.div>
+                </div>
+
+                {/* Floating Particles Background */}
+                <div className="absolute inset-0 overflow-hidden pointer-events-none">
+                  {[...Array(8)].map((_, i) => (
+                    <motion.div
+                      key={i}
+                      className="absolute w-2 h-2 bg-white/30 rounded-full"
+                      style={{
+                        left: `${Math.random() * 100}%`,
+                        top: `${Math.random() * 100}%`,
+                      }}
+                      animate={{
+                        y: [0, -30, 0],
+                        opacity: [0.3, 0.8, 0.3],
+                        scale: [1, 1.5, 1],
+                      }}
+                      transition={{
+                        duration: 3 + Math.random() * 2,
+                        repeat: Infinity,
+                        delay: Math.random() * 2,
+                      }}
+                    />
+                  ))}
+                </div>
+
+                {/* Stats or Tags */}
+                <div className="flex flex-wrap justify-center gap-3 relative z-10">
+                  {['React', 'TypeScript', 'Tailwind', 'Vite', 'CFC IT', 'Geneva'].map((tech, i) => (
+                    <motion.span
+                      key={tech}
+                      initial={{ opacity: 0, scale: 0 }}
+                      animate={inView ? { opacity: 1, scale: 1 } : {}}
+                      transition={{ delay: 1.2 + i * 0.1 }}
+                      className="px-4 py-2 bg-white/20 backdrop-blur-sm rounded-full text-sm font-semibold hover:bg-white/30 transition-all cursor-default"
+                    >
+                      {tech}
+                    </motion.span>
+                  ))}
+                </div>
+              </motion.div>
+
               <div className="flex flex-col md:flex-row items-center justify-between gap-6">
                 {/* Social Links - Left */}
                 <motion.div
