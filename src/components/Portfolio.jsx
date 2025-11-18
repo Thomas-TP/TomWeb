@@ -70,6 +70,7 @@ const Portfolio = () => {
                     <img
                       src="/portfolio-desktop.png"
                       alt="Portfolio Desktop"
+                      loading="lazy"
                       className="w-full h-auto rounded-lg shadow-xl"
                     />
                     <div className="mt-3 text-center">
@@ -88,6 +89,7 @@ const Portfolio = () => {
                     <img
                       src="/portfolio-tablet.png"
                       alt="Portfolio Tablet"
+                      loading="lazy"
                       className="w-full h-auto rounded-lg shadow-xl"
                     />
                     <div className="mt-3 text-center">
@@ -106,6 +108,7 @@ const Portfolio = () => {
                     <img
                       src="/portfolio-mobile.png"
                       alt="Portfolio Mobile"
+                      loading="lazy"
                       className="w-full h-auto rounded-lg shadow-xl"
                     />
                     <div className="mt-3 text-center">

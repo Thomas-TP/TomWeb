@@ -125,6 +125,12 @@ const resources = {
         rights: 'Tous droits réservés.',
         madeIn: 'Fait avec ❤️ en Suisse',
       },
+      notFound: {
+        title: 'Page non trouvée',
+        description: 'Oups ! La page que vous recherchez n\'existe pas ou a été déplacée.',
+        backHome: 'Retour à l\'accueil',
+        goBack: 'Page précédente',
+      },
     },
   },
   en: {
@@ -249,6 +255,12 @@ const resources = {
       footer: {
         rights: 'All rights reserved.',
         madeIn: 'Made with ❤️ in Switzerland',
+      },
+      notFound: {
+        title: 'Page not found',
+        description: 'Oops! The page you\'re looking for doesn\'t exist or has been moved.',
+        backHome: 'Back to home',
+        goBack: 'Go back',
       },
     },
   },

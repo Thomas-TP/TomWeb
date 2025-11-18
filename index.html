@@ -5,6 +5,12 @@
     <link rel="icon" type="image/png" href="/Favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- Performance Optimizations -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preload" href="/Logo-light.png" as="image" type="image/png" />
+    <link rel="dns-prefetch" href="https://formspree.io" />
+
     <!-- SEO Meta Tags -->
     <meta name="description" content="TomWeb - Création de sites web modernes et professionnels pour les PME suisses. Services de développement web et support." />
     <meta name="keywords" content="TomWeb, création site web, développement web, site vitrine, Suisse, web design" />
@@ -13,17 +19,60 @@
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://thomastp.me/" />
+    <meta property="og:url" content="https://tomweb.ch/" />
     <meta property="og:title" content="TomWeb - Création de Sites Web Modernes | Suisse" />
     <meta property="og:description" content="Services de création de sites web modernes et professionnels pour les PME suisses. En apprentissage CFC informaticien." />
-    <meta property="og:image" content="https://thomastp.me/og-image.jpg" />
+    <meta property="og:image" content="https://tomweb.ch/Logo-dark.png" />
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="https://thomastp.me/" />
+    <meta property="twitter:url" content="https://tomweb.ch/" />
     <meta property="twitter:title" content="TomWeb - Création de Sites Web Modernes | Suisse" />
     <meta property="twitter:description" content="Services de création de sites web modernes et professionnels pour les PME suisses." />
-    <meta property="twitter:image" content="https://thomastp.me/og-image.jpg" />
+    <meta property="twitter:image" content="https://tomweb.ch/Logo-dark.png" />
+
+    <!-- Structured Data JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "TomWeb",
+      "image": "https://tomweb.ch/Logo-dark.png",
+      "description": "Création de sites web modernes et professionnels pour les PME suisses. Services de développement web, design responsive et support.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "CH",
+        "addressRegion": "Vaud"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "addressCountry": "CH"
+      },
+      "url": "https://tomweb.ch",
+      "telephone": "+41763764551",
+      "email": "thomas@prudhomme.li",
+      "priceRange": "CHF 1000-10000",
+      "founder": {
+        "@type": "Person",
+        "name": "Thomas Prudhomme",
+        "jobTitle": "Développeur Web",
+        "url": "https://thomastp.me",
+        "sameAs": [
+          "https://github.com/Thomas-TP",
+          "https://www.linkedin.com/in/thomas-p-6850772aa/",
+          "https://linktr.ee/Thomas_IT"
+        ]
+      },
+      "offers": {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Création de site web",
+          "description": "Site vitrine, application sur mesure, refonte de site existant, maintenance"
+        }
+      }
+    }
+    </script>
   </head>
   <body>
     <div id="root"></div>
