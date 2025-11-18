@@ -1,6 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
+import AuroraBackground from './AuroraBackground';
 
 const Contact = () => {
   const { t } = useTranslation();
@@ -10,8 +11,11 @@ const Contact = () => {
   });
 
   return (
-    <section id="contact" className="py-20 bg-white dark:bg-gray-900">
-      <div className="container-custom">
+    <section id="contact" className="relative py-20 bg-white dark:bg-gray-900 overflow-hidden">
+      {/* Aurora Background */}
+      <AuroraBackground />
+
+      <div className="container-custom relative z-10">
         <motion.div
           ref={ref}
           initial={{ opacity: 0, y: 30 }}

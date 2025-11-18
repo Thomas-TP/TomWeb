@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { motion, AnimatePresence } from 'framer-motion';
 import Logo from './Logo';
 import DarkModeToggle from './DarkModeToggle';
+import MagneticButton from './MagneticButton';
 
 const Navbar = () => {
   const { t, i18n } = useTranslation();
@@ -50,16 +51,19 @@ const Navbar = () => {
       <div className="container-custom">
         <div className="flex items-center justify-between h-20 md:h-24">
           {/* Logo */}
-          <motion.a
-            href="#home"
-            className="flex items-center"
-            onClick={(e) => scrollToSection(e, '#home')}
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            aria-label={t('nav.home')}
-          >
-            <Logo className="h-14 md:h-16 w-auto" />
-          </motion.a>
+          <div className="flex items-center">
+            <MagneticButton
+              onClick={(e) => {
+                e.preventDefault();
+                scrollToSection(e, '#home');
+              }}
+              className="flex items-center bg-transparent border-0 p-0 cursor-pointer"
+              magneticStrength={0.4}
+              magneticRange={120}
+            >
+              <Logo className="h-14 md:h-16 w-auto" />
+            </MagneticButton>
+          </div>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
