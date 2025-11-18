@@ -11,8 +11,8 @@ const Footer = () => {
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           {/* Logo & Description */}
           <div>
-            <div className="mb-4">
-              <Logo className="h-20 w-auto" />
+            <div className="mb-6">
+              <Logo className="h-40 w-auto" />
             </div>
             <p className="text-gray-400">
               {t('hero.subtitle')}
