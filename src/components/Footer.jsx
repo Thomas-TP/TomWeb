@@ -15,7 +15,7 @@ const Footer = () => {
               <img
                 src="/Logo-dark.png"
                 alt="TomWeb Logo"
-                className="h-60 w-auto"
+                className="h-32 w-auto"
               />
             </div>
             <p className="text-gray-400 whitespace-nowrap">
@@ -26,7 +26,7 @@ const Footer = () => {
           {/* Quick Links - Two Columns */}
           <div>
             <h3 className="text-lg font-bold mb-3">Navigation</h3>
-            <ul className="grid grid-cols-2 gap-x-2 gap-y-1">
+            <ul className="grid grid-cols-2 gap-x-1 gap-y-1">
               {['home', 'services', 'portfolio', 'about', 'contact'].map((item) => (
                 <li key={item}>
                   <a

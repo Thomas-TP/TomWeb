@@ -48,7 +48,7 @@ const Navbar = () => {
       }`}
     >
       <div className="container-custom">
-        <div className="flex items-center justify-between h-24 md:h-28">
+        <div className="flex items-center justify-between h-20 md:h-24">
           {/* Logo */}
           <motion.a
             href="#home"
@@ -57,7 +57,7 @@ const Navbar = () => {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            <Logo className="h-28 md:h-36 w-auto" />
+            <Logo className="h-14 md:h-16 w-auto" />
           </motion.a>
 
           {/* Desktop Navigation */}
