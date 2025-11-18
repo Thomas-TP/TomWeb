@@ -53,7 +53,7 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-20 bg-white">
+    <section id="contact" className="py-20 bg-white dark:bg-gray-900">
       <div className="container-custom">
         <motion.div
           ref={ref}
@@ -62,9 +62,9 @@ const Contact = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="section-title">{t('contact.title')}</h2>
-          <p className="section-subtitle">{t('contact.subtitle')}</p>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+          <h2 className="section-title dark:text-white">{t('contact.title')}</h2>
+          <p className="section-subtitle dark:text-gray-300">{t('contact.subtitle')}</p>
+          <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
             {t('contact.description')}
           </p>
         </motion.div>
@@ -74,7 +74,7 @@ const Contact = () => {
             initial={{ opacity: 0, y: 50 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.8 }}
-            className="bg-gray-50 rounded-3xl p-8 md:p-12 shadow-xl"
+            className="bg-gray-50 dark:bg-gray-800 rounded-3xl p-8 md:p-12 shadow-xl"
           >
             <form onSubmit={handleSubmit} className="space-y-6">
               {/* Name Field */}
@@ -83,7 +83,7 @@ const Contact = () => {
                 animate={inView ? { opacity: 1, x: 0 } : {}}
                 transition={{ duration: 0.6, delay: 0.2 }}
               >
-                <label htmlFor="name" className="block text-gray-700 font-semibold mb-2">
+                <label htmlFor="name" className="block text-gray-700 dark:text-gray-300 font-semibold mb-2">
                   {t('contact.form.name')}
                 </label>
                 <input
@@ -94,7 +94,7 @@ const Contact = () => {
                   onChange={handleChange}
                   required
                   placeholder={t('contact.form.namePlaceholder')}
-                  className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-swiss-red focus:ring-2 focus:ring-swiss-red/20 outline-none transition-all"
+                  className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white focus:border-swiss-red focus:ring-2 focus:ring-swiss-red/20 outline-none transition-all"
                 />
               </motion.div>
 
@@ -104,7 +104,7 @@ const Contact = () => {
                 animate={inView ? { opacity: 1, x: 0 } : {}}
                 transition={{ duration: 0.6, delay: 0.4 }}
               >
-                <label htmlFor="email" className="block text-gray-700 font-semibold mb-2">
+                <label htmlFor="email" className="block text-gray-700 dark:text-gray-300 font-semibold mb-2">
                   {t('contact.form.email')}
                 </label>
                 <input
@@ -115,7 +115,7 @@ const Contact = () => {
                   onChange={handleChange}
                   required
                   placeholder={t('contact.form.emailPlaceholder')}
-                  className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-swiss-red focus:ring-2 focus:ring-swiss-red/20 outline-none transition-all"
+                  className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white focus:border-swiss-red focus:ring-2 focus:ring-swiss-red/20 outline-none transition-all"
                 />
               </motion.div>
 
@@ -125,7 +125,7 @@ const Contact = () => {
                 animate={inView ? { opacity: 1, x: 0 } : {}}
                 transition={{ duration: 0.6, delay: 0.6 }}
               >
-                <label htmlFor="message" className="block text-gray-700 font-semibold mb-2">
+                <label htmlFor="message" className="block text-gray-700 dark:text-gray-300 font-semibold mb-2">
                   {t('contact.form.message')}
                 </label>
                 <textarea
@@ -136,7 +136,7 @@ const Contact = () => {
                   required
                   rows="6"
                   placeholder={t('contact.form.messagePlaceholder')}
-                  className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-swiss-red focus:ring-2 focus:ring-swiss-red/20 outline-none transition-all resize-none"
+                  className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white focus:border-swiss-red focus:ring-2 focus:ring-swiss-red/20 outline-none transition-all resize-none"
                 />
               </motion.div>
 

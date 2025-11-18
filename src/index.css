@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+@variant dark (.dark &);
+
 @theme {
   --color-swiss-red: #FF0000;
   --color-swiss-dark: #DC143C;

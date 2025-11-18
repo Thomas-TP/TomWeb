@@ -10,7 +10,7 @@ const Portfolio = () => {
   });
 
   return (
-    <section id="portfolio" className="py-20 bg-white">
+    <section id="portfolio" className="py-20 bg-white dark:bg-gray-900">
       <div className="container-custom">
         <motion.div
           ref={ref}
@@ -19,8 +19,8 @@ const Portfolio = () => {
           transition={{ duration: 0.6 }}
           className="text-center"
         >
-          <h2 className="section-title">{t('portfolio.title')}</h2>
-          <p className="section-subtitle">{t('portfolio.subtitle')}</p>
+          <h2 className="section-title dark:text-white">{t('portfolio.title')}</h2>
+          <p className="section-subtitle dark:text-gray-300">{t('portfolio.subtitle')}</p>
         </motion.div>
 
         <motion.div
