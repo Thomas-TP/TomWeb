@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { ThemeProvider } from './contexts/ThemeContext';
 import LoadingScreen from './components/LoadingScreen';
+import SplashCursor from './components/SplashCursor';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Services from './components/Services';
@@ -33,6 +34,8 @@ function App() {
   return (
     <ThemeProvider>
       {isLoading && <LoadingScreen onLoadingComplete={handleLoadingComplete} />}
+
+      {!isLoading && <SplashCursor />}
 
       {showContent && (
         <motion.div

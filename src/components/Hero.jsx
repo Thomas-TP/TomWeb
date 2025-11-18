@@ -1,5 +1,9 @@
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
+import AuroraBackground from './AuroraBackground';
+import GradientText from './GradientText';
+import MagneticButton from './MagneticButton';
+import CountUp from './CountUp';
 
 const Hero = () => {
   const { t } = useTranslation();
@@ -21,9 +25,12 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-50 via-white to-red-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 pt-20"
+      className="relative min-h-screen flex items-center justify-center bg-gray-50 dark:bg-gray-900 pt-20 overflow-hidden"
     >
-      <div className="container-custom py-20">
+      {/* Aurora Background */}
+      <AuroraBackground />
+
+      <div className="container-custom py-20 relative z-10">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <motion.div
@@ -40,9 +47,9 @@ const Hero = () => {
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-gray-800 dark:text-white leading-tight">
                 {t('hero.title')}
                 <br />
-                <span className="text-swiss-red bg-gradient-to-r from-swiss-red to-swiss-dark bg-clip-text text-transparent">
+                <GradientText className="text-5xl md:text-6xl lg:text-7xl font-bold">
                   {t('hero.titleHighlight')}
-                </span>
+                </GradientText>
               </h1>
             </motion.div>
 
@@ -70,12 +77,45 @@ const Hero = () => {
               transition={{ delay: 0.8, duration: 0.6 }}
               className="flex flex-col sm:flex-row gap-4"
             >
-              <button onClick={scrollToContact} className="btn-primary">
+              <MagneticButton onClick={scrollToContact} className="btn-primary">
                 {t('hero.cta')}
-              </button>
-              <button onClick={scrollToPortfolio} className="btn-secondary">
+              </MagneticButton>
+              <MagneticButton onClick={scrollToPortfolio} className="btn-secondary">
                 {t('hero.ctaSecondary')}
-              </button>
+              </MagneticButton>
+            </motion.div>
+
+            {/* Statistics with CountUp */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 1, duration: 0.6 }}
+              className="flex flex-wrap gap-8 mt-8"
+            >
+              <div className="text-center">
+                <div className="text-4xl font-bold text-swiss-red">
+                  <CountUp end={50} suffix="+" />
+                </div>
+                <div className="text-sm text-gray-600 dark:text-gray-400 mt-1">
+                  Projets réalisés
+                </div>
+              </div>
+              <div className="text-center">
+                <div className="text-4xl font-bold text-swiss-red">
+                  <CountUp end={100} suffix="%" />
+                </div>
+                <div className="text-sm text-gray-600 dark:text-gray-400 mt-1">
+                  Satisfaction client
+                </div>
+              </div>
+              <div className="text-center">
+                <div className="text-4xl font-bold text-swiss-red">
+                  <CountUp end={5} suffix="+" />
+                </div>
+                <div className="text-sm text-gray-600 dark:text-gray-400 mt-1">
+                  Années d'expérience
+                </div>
+              </div>
             </motion.div>
           </motion.div>
 

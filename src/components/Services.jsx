@@ -1,6 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
+import Tilt3D from './Tilt3D';
 
 const ServiceCard = ({ icon, titleKey, descKey, delay }) => {
   const { t } = useTranslation();
@@ -10,25 +11,27 @@ const ServiceCard = ({ icon, titleKey, descKey, delay }) => {
   });
 
   return (
-    <motion.div
-      ref={ref}
-      initial={{ opacity: 0, y: 50 }}
-      animate={inView ? { opacity: 1, y: 0 } : {}}
-      transition={{ duration: 0.6, delay }}
-      className="bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 border-2 border-gray-100 dark:border-gray-700 group hover:border-swiss-red dark:hover:border-swiss-red"
-    >
+    <Tilt3D className="h-full">
       <motion.div
-        className="mb-6 text-swiss-red"
-        whileHover={{ scale: 1.1, rotate: 5 }}
-        transition={{ type: "spring", stiffness: 300 }}
+        ref={ref}
+        initial={{ opacity: 0, y: 50 }}
+        animate={inView ? { opacity: 1, y: 0 } : {}}
+        transition={{ duration: 0.6, delay }}
+        className="h-full bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 border-2 border-gray-100 dark:border-gray-700 group hover:border-swiss-red dark:hover:border-swiss-red"
       >
-        {icon}
+        <motion.div
+          className="mb-6 text-swiss-red"
+          whileHover={{ scale: 1.1, rotate: 5 }}
+          transition={{ type: "spring", stiffness: 300 }}
+        >
+          {icon}
+        </motion.div>
+        <h3 className="text-2xl font-bold text-gray-800 dark:text-white mb-4 group-hover:text-swiss-red transition-colors">
+          {t(titleKey)}
+        </h3>
+        <p className="text-gray-600 dark:text-gray-300 leading-relaxed">{t(descKey)}</p>
       </motion.div>
-      <h3 className="text-2xl font-bold text-gray-800 dark:text-white mb-4 group-hover:text-swiss-red transition-colors">
-        {t(titleKey)}
-      </h3>
-      <p className="text-gray-600 dark:text-gray-300 leading-relaxed">{t(descKey)}</p>
-    </motion.div>
+    </Tilt3D>
   );
 };
 
