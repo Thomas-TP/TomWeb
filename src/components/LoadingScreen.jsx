@@ -90,7 +90,7 @@ const LoadingScreen = ({ onLoadingComplete }) => {
                   width="20"
                   height="70"
                   fill="currentColor"
-                  className="text-swiss-red"
+                  className="text-white"
                 />
                 <rect
                   x="15"
@@ -98,7 +98,7 @@ const LoadingScreen = ({ onLoadingComplete }) => {
                   width="70"
                   height="20"
                   fill="currentColor"
-                  className="text-swiss-red"
+                  className="text-white"
                 />
               </svg>
 
@@ -115,8 +115,8 @@ const LoadingScreen = ({ onLoadingComplete }) => {
                 }}
               >
                 <svg className="w-24 h-24 md:w-32 md:h-32" viewBox="0 0 100 100">
-                  <rect x="40" y="15" width="20" height="70" fill="#DC2626" />
-                  <rect x="15" y="40" width="70" height="20" fill="#DC2626" />
+                  <rect x="40" y="15" width="20" height="70" fill="#FFFFFF" />
+                  <rect x="15" y="40" width="70" height="20" fill="#FFFFFF" />
                 </svg>
               </motion.div>
             </motion.div>
@@ -212,14 +212,14 @@ const LoadingScreen = ({ onLoadingComplete }) => {
           {/* Corner decorations - Swiss flags */}
           <div className="absolute top-8 right-8 opacity-10">
             <svg className="w-16 h-16" viewBox="0 0 100 100">
-              <rect x="40" y="15" width="20" height="70" fill="currentColor" className="text-swiss-red" />
-              <rect x="15" y="40" width="70" height="20" fill="currentColor" className="text-swiss-red" />
+              <rect x="40" y="15" width="20" height="70" fill="currentColor" className="text-white" />
+              <rect x="15" y="40" width="70" height="20" fill="currentColor" className="text-white" />
             </svg>
           </div>
           <div className="absolute bottom-8 left-8 opacity-10">
             <svg className="w-16 h-16" viewBox="0 0 100 100">
-              <rect x="40" y="15" width="20" height="70" fill="currentColor" className="text-swiss-red" />
-              <rect x="15" y="40" width="70" height="20" fill="currentColor" className="text-swiss-red" />
+              <rect x="40" y="15" width="20" height="70" fill="currentColor" className="text-white" />
+              <rect x="15" y="40" width="70" height="20" fill="currentColor" className="text-white" />
             </svg>
           </div>
         </motion.div>
