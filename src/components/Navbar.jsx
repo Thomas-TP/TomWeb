@@ -56,6 +56,7 @@ const Navbar = () => {
             onClick={(e) => scrollToSection(e, '#home')}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
+            aria-label={t('nav.home')}
           >
             <Logo className="h-14 md:h-16 w-auto" />
           </motion.a>
