@@ -12,7 +12,7 @@ const Footer = () => {
           {/* Logo & Description */}
           <div>
             <div className="mb-4">
-              <Logo className="h-12 w-auto" />
+              <Logo className="h-20 w-auto" />
             </div>
             <p className="text-gray-400">
               {t('hero.subtitle')}
