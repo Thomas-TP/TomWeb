@@ -1,6 +1,137 @@
-# https://www.robotstxt.org/robotstxt.html
+# robots.txt pour TomWeb - https://tomweb.dev
+# Optimisé pour SEO et indexation maximale
+
+# ===================================
+# Règles pour tous les robots
+# ===================================
 User-agent: *
 Allow: /
+Disallow: /api/
+Disallow: /*.json$
+Disallow: /node_modules/
+Disallow: /src/
+Disallow: /.git/
+Disallow: /.github/
 
-# Sitemap
-Sitemap: https://thomastp.me/sitemap.xml
+# Délai entre les requêtes (10 secondes)
+Crawl-delay: 10
+
+# ===================================
+# Règles spécifiques Google
+# ===================================
+User-agent: Googlebot
+Allow: /
+Allow: /*.css
+Allow: /*.js
+Allow: /*.png
+Allow: /*.jpg
+Allow: /*.jpeg
+Allow: /*.gif
+Allow: /*.svg
+Allow: /*.webp
+Disallow: /api/
+
+User-agent: Googlebot-Image
+Allow: /
+Allow: /*.png
+Allow: /*.jpg
+Allow: /*.jpeg
+Allow: /*.gif
+Allow: /*.svg
+Allow: /*.webp
+
+# ===================================
+# Règles spécifiques Bing
+# ===================================
+User-agent: Bingbot
+Allow: /
+Allow: /*.css
+Allow: /*.js
+Crawl-delay: 5
+
+# ===================================
+# Règles pour IA / Chatbots
+# ===================================
+# ChatGPT / OpenAI
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+# Claude / Anthropic
+User-agent: Claude-Web
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+# Google Gemini / Bard
+User-agent: Google-Extended
+Allow: /
+
+# Perplexity AI
+User-agent: PerplexityBot
+Allow: /
+
+# Common Crawl (utilisé par beaucoup d'IA)
+User-agent: CCBot
+Allow: /
+
+# ===================================
+# Règles pour réseaux sociaux
+# ===================================
+# Facebook
+User-agent: facebookexternalhit
+Allow: /
+
+# Twitter/X
+User-agent: Twitterbot
+Allow: /
+
+# LinkedIn
+User-agent: LinkedInBot
+Allow: /
+
+# Pinterest
+User-agent: Pinterestbot
+Allow: /
+
+# WhatsApp
+User-agent: WhatsApp
+Allow: /
+
+# ===================================
+# Bloquer les mauvais robots
+# ===================================
+# Scrapers agressifs
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: BLEXBot
+Disallow: /
+
+# ===================================
+# Sitemaps
+# ===================================
+Sitemap: https://tomweb.dev/sitemap.xml
+Sitemap: https://tomweb.dev/feed.rss
+Sitemap: https://tomweb.dev/feed.atom
+
+# ===================================
+# Informations complémentaires
+# ===================================
+# Site web: https://tomweb.dev
+# Contact: thomas@prudhomme.li
+# Localisation: Vaud, Suisse
+# Langues: fr-CH, en
+# Dernière mise à jour: 2025-01-18
