@@ -331,8 +331,8 @@ const Portfolio = () => {
                   <MagneticButton
                     onClick={() => window.open('https://thomastp.me', '_blank')}
                     className="inline-flex items-center gap-3 bg-white text-swiss-red font-semibold py-4 px-8 rounded-lg hover:bg-gray-100 transition-all duration-300 shadow-lg hover:shadow-xl"
-                    magneticStrength={2}
-                    magneticRange={60}
+                    magneticStrength={0.4}
+                    magneticRange={120}
                   >
                     {t('portfolio.cta')}
                     <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
