@@ -6,12 +6,12 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-gray-900 text-white py-8">
+    <footer className="bg-gray-900 text-white py-4">
       <div className="container-custom">
-        <div className="grid md:grid-cols-3 gap-8 mb-6">
+        <div className="grid md:grid-cols-3 gap-8 mb-4">
           {/* Logo & Description */}
           <div>
-            <div className="mb-4">
+            <div className="mb-3">
               <img
                 src="/Logo-dark.png"
                 alt="TomWeb Logo"
@@ -25,8 +25,8 @@ const Footer = () => {
 
           {/* Quick Links - Two Columns */}
           <div>
-            <h3 className="text-lg font-bold mb-4">Navigation</h3>
-            <ul className="grid grid-cols-2 gap-2">
+            <h3 className="text-lg font-bold mb-3">Navigation</h3>
+            <ul className="grid grid-cols-2 gap-x-4 gap-y-1">
               {['home', 'services', 'portfolio', 'about', 'contact'].map((item) => (
                 <li key={item}>
                   <a
@@ -42,8 +42,8 @@ const Footer = () => {
 
           {/* Contact Info */}
           <div>
-            <h3 className="text-lg font-bold mb-4">{t('nav.contact')}</h3>
-            <div className="space-y-3">
+            <h3 className="text-lg font-bold mb-3">{t('nav.contact')}</h3>
+            <div className="space-y-2">
               <div className="flex items-center gap-2 text-gray-400">
                 <svg className="w-5 h-5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
@@ -80,7 +80,7 @@ const Footer = () => {
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-gray-800 pt-6 flex flex-col md:flex-row justify-between items-center gap-4">
+        <div className="border-t border-gray-800 pt-4 flex flex-col md:flex-row justify-between items-center gap-2">
           <p className="text-gray-400 text-sm">
             © {currentYear} TomWeb. {t('footer.rights')}
           </p>
