@@ -3,7 +3,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main
+      - claude/create-showcase-website-014ZimNKRW4w16Rmcnnhi1Zu
   workflow_dispatch:
 
 permissions:
