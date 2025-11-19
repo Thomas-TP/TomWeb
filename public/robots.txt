@@ -123,13 +123,10 @@ Disallow: /
 # ===================================
 # Sitemaps
 # ===================================
+# Sitemaps
+# ===================================
 # Index principal des sitemaps
-Sitemap: https://tomweb.dev/sitemap_index.xml
-
-# Sitemaps individuels
 Sitemap: https://tomweb.dev/sitemap.xml
-Sitemap: https://tomweb.dev/feed.rss
-Sitemap: https://tomweb.dev/feed.atom
 
 # ===================================
 # Fichiers standards
