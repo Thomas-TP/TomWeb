@@ -1,4 +1,3 @@
-import './i18n';
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { ThemeProvider } from './contexts/ThemeContext';
@@ -19,7 +18,6 @@ function App() {
   const handleLoadingComplete = () => {
     setIsLoading(false);
   };
-
 
 
   return (
