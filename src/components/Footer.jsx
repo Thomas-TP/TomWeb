@@ -12,11 +12,13 @@ const Footer = () => {
           {/* Logo & Description */}
           <div>
             <div className="mb-3">
-              <img
-                src="/Logo-dark.png"
-                alt="TomWeb Logo"
-                className="h-32 w-auto"
-              />
+              <a href="/" aria-label="Retour à l'accueil">
+                <img
+                  src="/Logo-dark.png"
+                  alt="TomWeb Logo"
+                  className="h-32 w-auto"
+                />
+              </a>
             </div>
             <p className="text-gray-400 whitespace-nowrap">
               {t('hero.subtitle')}
