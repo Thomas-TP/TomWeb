@@ -12,6 +12,8 @@ Disallow: /node_modules/
 Disallow: /src/
 Disallow: /.git/
 Disallow: /.github/
+Disallow: /404.html
+Disallow: /index.html
 
 # Délai entre les requêtes (10 secondes)
 Crawl-delay: 10
