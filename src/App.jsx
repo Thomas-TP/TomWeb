@@ -11,7 +11,6 @@ import QuoteForm from './components/QuoteForm';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
-import GlobalScene3D from './components/GlobalScene3D';
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -29,13 +28,11 @@ function App() {
         </div>
       )}
 
-      <GlobalScene3D />
-
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5 }}
-        className="min-h-screen transition-colors duration-300 relative z-0"
+        className="min-h-screen bg-white dark:bg-gray-900 transition-colors duration-300 relative z-0"
       >
         <Navbar />
         <Hero />

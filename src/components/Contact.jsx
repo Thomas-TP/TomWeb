@@ -11,7 +11,7 @@ const Contact = () => {
   });
 
   return (
-    <section id="contact" className="relative py-20 overflow-hidden">
+    <section id="contact" className="relative py-20 bg-white dark:bg-gray-900 overflow-hidden">
       {/* Aurora Background */}
       <AuroraBackground />
 

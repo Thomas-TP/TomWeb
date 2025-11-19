@@ -82,7 +82,7 @@ const Services = () => {
   ];
 
   return (
-    <section id="services" className="py-20">
+    <section id="services" className="py-20 bg-gray-50 dark:bg-gray-800">
       <div className="container-custom">
         <motion.div
           ref={ref}

@@ -24,7 +24,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden"
+      className="relative min-h-screen flex items-center justify-center bg-gray-50 dark:bg-gray-900 pt-20 overflow-hidden"
     >
       {/* Aurora Background */}
       <AuroraBackground />
