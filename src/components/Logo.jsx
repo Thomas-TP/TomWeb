@@ -5,7 +5,7 @@ const Logo = ({ className = "w-10 h-10" }) => {
 
   return (
     <img
-      src={isDark ? '/Logo-dark.png' : '/Logo-light.png'}
+      src={isDark ? '/Logo-dark.webp' : '/Logo-light.webp'}
       alt="TomWeb Logo"
       className={className}
     />
