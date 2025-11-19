@@ -12,7 +12,7 @@ const About = () => {
   const skills = t('about.skillsList', { returnObjects: true });
 
   return (
-    <section id="about" className="py-20 bg-gray-50 dark:bg-gray-800">
+    <section id="about" className="py-20">
       <div className="container-custom">
         <motion.div
           ref={ref}

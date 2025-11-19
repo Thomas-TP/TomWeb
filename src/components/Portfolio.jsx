@@ -11,7 +11,7 @@ const Portfolio = () => {
   });
 
   return (
-    <section id="portfolio" className="py-20 bg-white dark:bg-gray-900">
+    <section id="portfolio" className="py-20">
       <div className="container-custom">
         <motion.div
           ref={ref}
