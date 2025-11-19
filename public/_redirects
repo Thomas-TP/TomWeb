@@ -1,0 +1,6 @@
+# Netlify Redirects
+# Force HTTPS
+http://tomweb.dev/* https://tomweb.dev/:splat 301!
+
+# SPA Fallback
+/* /index.html 200
