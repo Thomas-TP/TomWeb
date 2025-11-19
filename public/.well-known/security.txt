@@ -1,0 +1,11 @@
+Contact: mailto:thomas@prudhomme.li
+Contact: https://wa.me/41763764551
+Expires: 2026-12-31T23:59:59.000Z
+Preferred-Languages: fr, en
+Canonical: https://tomweb.dev/.well-known/security.txt
+Policy: https://tomweb.dev/
+Hiring: https://tomweb.dev/#contact
+
+# Si vous découvrez une vulnérabilité de sécurité, merci de nous contacter
+# par email à thomas@prudhomme.li ou via WhatsApp au +41 76 376 45 51.
+# Nous nous engageons à répondre dans les 48 heures.

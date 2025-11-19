@@ -123,15 +123,28 @@ Disallow: /
 # ===================================
 # Sitemaps
 # ===================================
+# Index principal des sitemaps
+Sitemap: https://tomweb.dev/sitemap_index.xml
+
+# Sitemaps individuels
 Sitemap: https://tomweb.dev/sitemap.xml
 Sitemap: https://tomweb.dev/feed.rss
 Sitemap: https://tomweb.dev/feed.atom
+
+# ===================================
+# Fichiers standards
+# ===================================
+# Informations sur l'équipe
+# Voir: https://tomweb.dev/humans.txt
+
+# Politique de sécurité
+# Voir: https://tomweb.dev/.well-known/security.txt
 
 # ===================================
 # Informations complémentaires
 # ===================================
 # Site web: https://tomweb.dev
 # Contact: thomas@prudhomme.li
-# Localisation: Vaud, Suisse
+# Localisation: Vaud, Suisse (Lausanne, Genève, Fribourg, Neuchâtel, Montreux, Vevey, Nyon, Yverdon, etc.)
 # Langues: fr-CH, en
 # Dernière mise à jour: 2025-01-18
