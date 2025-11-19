@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+     xmlns:atom="http://www.w3.org/2005/Atom"
+     xmlns:content="http://purl.org/rss/1.0/modules/content/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:georss="http://www.georss.org/georss"
+     xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#">
+
+  <channel>
+    <title>TomWeb - Création de Sites Web Modernes en Suisse</title>
+    <link>https://tomweb.dev/</link>
+    <atom:link href="https://tomweb.dev/feed.rss" rel="self" type="application/rss+xml" />
+    <description>Services de création de sites web modernes et professionnels pour PME suisses. Développement web, design responsive, SEO optimisé. Développeur web CFC à Vaud, Suisse.</description>
+    <language>fr-CH</language>
+    <copyright>Copyright 2025 TomWeb - Thomas Prudhomme</copyright>
+    <managingEditor>thomas@prudhomme.li (Thomas Prudhomme)</managingEditor>
+    <webMaster>thomas@prudhomme.li (Thomas Prudhomme)</webMaster>
+    <lastBuildDate>Mon, 18 Jan 2025 12:00:00 +0100</lastBuildDate>
+    <pubDate>Mon, 18 Jan 2025 12:00:00 +0100</pubDate>
+    <category>Développement Web</category>
+    <category>Sites Web Suisse</category>
+    <category>PME Suisse</category>
+    <category>Web Design</category>
+    <ttl>1440</ttl>
+    <image>
+      <url>https://tomweb.dev/Logo-dark.png</url>
+      <title>TomWeb</title>
+      <link>https://tomweb.dev/</link>
+      <width>144</width>
+      <height>144</height>
+    </image>
+
+    <!-- Géolocalisation -->
+    <georss:point>46.5197 6.6323</georss:point>
+    <geo:lat>46.5197</geo:lat>
+    <geo:long>6.6323</geo:long>
+
+    <!-- Article 1 - Services -->
+    <item>
+      <title>Services de Création de Sites Web Professionnels</title>
+      <link>https://tomweb.dev/#services</link>
+      <guid isPermaLink="true">https://tomweb.dev/#services</guid>
+      <description>Découvrez nos services de création de sites web modernes : sites vitrines, e-commerce, applications web sur mesure, refonte et maintenance. Solutions adaptées aux PME suisses.</description>
+      <content:encoded><![CDATA[
+        <h2>Services de Développement Web en Suisse</h2>
+        <p>TomWeb propose une gamme complète de services de développement web pour les PME suisses :</p>
+        <ul>
+          <li><strong>Sites Vitrines</strong> - Présence web professionnelle pour votre entreprise</li>
+          <li><strong>E-commerce</strong> - Boutiques en ligne complètes avec paiement sécurisé</li>
+          <li><strong>Applications Web Sur Mesure</strong> - Solutions personnalisées selon vos besoins</li>
+          <li><strong>Refonte de Sites</strong> - Modernisation de votre site existant</li>
+          <li><strong>Maintenance & Support</strong> - Suivi technique et mises à jour continues</li>
+        </ul>
+        <p>Tous nos sites sont 100% responsive, optimisés SEO et ultra-rapides.</p>
+      ]]></content:encoded>
+      <dc:creator>Thomas Prudhomme</dc:creator>
+      <pubDate>Mon, 18 Jan 2025 10:00:00 +0100</pubDate>
+      <category>Services</category>
+      <category>Développement Web</category>
+    </item>
+
+    <!-- Article 2 - Portfolio -->
+    <item>
+      <title>Portfolio - Exemples de Réalisations Web</title>
+      <link>https://tomweb.dev/#portfolio</link>
+      <guid isPermaLink="true">https://tomweb.dev/#portfolio</guid>
+      <description>Découvrez notre portfolio de réalisations web. Sites modernes, responsive et optimisés créés avec React, Vite et Tailwind CSS.</description>
+      <content:encoded><![CDATA[
+        <h2>Portfolio TomWeb</h2>
+        <p>Consultez nos réalisations web, incluant :</p>
+        <ul>
+          <li>Portfolio personnel thomastp.me - Site vitrine moderne</li>
+          <li>Design responsive (desktop, tablette, mobile)</li>
+          <li>Technologies utilisées : React 19, Vite, Tailwind CSS v4</li>
+          <li>Animations avancées avec Framer Motion</li>
+          <li>Performance optimale et SEO</li>
+        </ul>
+        <p>Visitez <a href="https://thomastp.me">thomastp.me</a> pour voir le portfolio complet.</p>
+      ]]></content:encoded>
+      <dc:creator>Thomas Prudhomme</dc:creator>
+      <pubDate>Mon, 18 Jan 2025 09:00:00 +0100</pubDate>
+      <category>Portfolio</category>
+      <category>Réalisations</category>
+      <enclosure url="https://tomweb.dev/portfolio-desktop.png" length="3954929" type="image/png" />
+    </item>
+
+    <!-- Article 3 - À propos -->
+    <item>
+      <title>À Propos - Développeur Web CFC en Suisse</title>
+      <link>https://tomweb.dev/#about</link>
+      <guid isPermaLink="true">https://tomweb.dev/#about</guid>
+      <description>Apprenti CFC informaticien en développement web à Vaud, Suisse. Spécialisé en React, TypeScript, Tailwind CSS et technologies web modernes.</description>
+      <content:encoded><![CDATA[
+        <h2>Thomas Prudhomme - Développeur Web CFC</h2>
+        <p>Apprenti CFC informaticien passionné par le développement web moderne. Basé dans le canton de Vaud, Suisse.</p>
+        <h3>Compétences</h3>
+        <ul>
+          <li>React & TypeScript</li>
+          <li>Tailwind CSS & Design Responsive</li>
+          <li>Vite & Outils Modernes</li>
+          <li>SEO & Performance Web</li>
+          <li>UX/UI Design</li>
+        </ul>
+        <p>Je crée des sites web modernes, rapides et optimisés pour les PME suisses.</p>
+      ]]></content:encoded>
+      <dc:creator>Thomas Prudhomme</dc:creator>
+      <pubDate>Mon, 18 Jan 2025 08:00:00 +0100</pubDate>
+      <category>À Propos</category>
+      <category>Développeur</category>
+    </item>
+
+    <!-- Article 4 - Contact -->
+    <item>
+      <title>Contact - Devis Gratuit pour Votre Site Web</title>
+      <link>https://tomweb.dev/#contact</link>
+      <guid isPermaLink="true">https://tomweb.dev/#contact</guid>
+      <description>Contactez TomWeb pour un devis gratuit. Email, WhatsApp ou téléphone. Réponse rapide et conseils personnalisés pour votre projet web.</description>
+      <content:encoded><![CDATA[
+        <h2>Contactez-nous pour votre Projet Web</h2>
+        <p>Obtenez un devis gratuit et personnalisé pour votre projet de site web.</p>
+        <h3>Coordonnées</h3>
+        <ul>
+          <li><strong>Email :</strong> thomas@prudhomme.li</li>
+          <li><strong>Téléphone :</strong> +41 76 376 45 51</li>
+          <li><strong>WhatsApp :</strong> +41 76 376 45 51</li>
+          <li><strong>Localisation :</strong> Canton de Vaud, Suisse</li>
+        </ul>
+        <p>Nous servons des clients dans toute la Suisse romande : Lausanne, Genève, Fribourg, Neuchâtel et environs.</p>
+      ]]></content:encoded>
+      <dc:creator>Thomas Prudhomme</dc:creator>
+      <pubDate>Mon, 18 Jan 2025 07:00:00 +0100</pubDate>
+      <category>Contact</category>
+      <georss:point>46.5197 6.6323</georss:point>
+    </item>
+
+  </channel>
+</rss>

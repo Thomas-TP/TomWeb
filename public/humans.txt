@@ -1,0 +1,39 @@
+# humanstxt.org/
+# Les humains derrière ce site web
+
+/* ÉQUIPE */
+  Développeur & Designer: Thomas Prudhomme
+  Contact: thomas@prudhomme.li
+  LinkedIn: https://www.linkedin.com/in/thomas-p-6850772aa/
+  GitHub: https://github.com/Thomas-TP
+  Localisation: Canton de Vaud, Suisse
+
+/* SITE */
+  Dernière mise à jour: 2025/01/18
+  Standards: HTML5, CSS3, ES2024
+  Composants: React 19.2.0, Vite 7.2.2
+  Framework CSS: Tailwind CSS v4
+  Animations: Framer Motion
+  Langue: Français (Suisse)
+  IDE: Visual Studio Code
+  Hébergement: GitHub Pages
+
+/* TECHNOLOGIES */
+  Frontend: React, TypeScript, Tailwind CSS
+  Build: Vite, PostCSS
+  Déploiement: GitHub Actions
+  SEO: Schema.org, Open Graph, GEO
+  Performance: Lazy Loading, Code Splitting
+  Accessibilité: ARIA, Semantic HTML
+
+/* REMERCIEMENTS */
+  Fonts: System Fonts (SF Pro, Segoe UI)
+  Icônes: Lucide React
+  Inspirations: Modern Web Design, Swiss Design
+
+/* FUN FACTS */
+  - Site 100% responsive
+  - Score Lighthouse 95+
+  - SEO ultra-optimisé
+  - Animations fluides 60fps
+  - Made with ❤️ in Switzerland 🇨🇭
